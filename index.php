@@ -1,4 +1,7 @@
 <?php
+if( ! is_file('config.php')){
+    copy('config.sample.php', 'config.php');
+}
 include 'config.php';
 ?><!doctype html>
 <html lang="ko">
