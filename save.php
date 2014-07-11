@@ -3,7 +3,7 @@ include 'config.php';
 var_dump($_POST);
 
 $sql = "INSERT INTO list
-        (빌려간사람, 빌린시각, 언제까지, 노트북번호)
+        (`빌려간사람`, `빌린시각`, `언제까지`, `노트북번호`)
         VALUES (?,?,?,?)";
 $prepared = $db->prepare($sql);
 
